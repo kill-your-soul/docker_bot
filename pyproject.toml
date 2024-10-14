@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "docker-bot"
+version = "0.1.0"
+description = ""
+authors = ["kill_your_soul <platonovdi@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+docker = "^7.1.0"
+aiogram = "^3.13.1"
+pydantic-settings = "^2.5.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.9"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "D100",
+    "D101",
+    "D102",
+    "D103",
+    "D104",
+    "D105",
+    "D106",
+    "FA100",
+    "RET504",
+    "A002",
+    "ANN101",
+    "SIM108",
+    "S113",
+    "T201",
+    "RUF001"
+]
+
+
+[tool.ruff]
+target-version = "py310"
+line-length = 120
